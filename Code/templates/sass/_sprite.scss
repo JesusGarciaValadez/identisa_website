@@ -1,0 +1,7 @@
+
+/* Start Sprite Master CSS */
+.btn_aviso,.btn_cerrar_over,.btn_cerrar{display: inline-block;background-repeat: no-repeat;background-image: url('../img/sprite.png');}
+.btn_aviso{background-position:0px 0px;width:15px;height:15px;}
+.btn_cerrar_over{background-position:-15px 0px;width:28px;height:28px;}
+.btn_cerrar{background-position:-43px 0px;width:28px;height:28px;}
+/* End Sprite Master CSS */

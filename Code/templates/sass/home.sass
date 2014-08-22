@@ -1,0 +1,81 @@
+html,body
+    // needs latest Compass, add '@import "compass"' to your scss
+    // Old browsers
+    background-color: rgb(245,245,245)
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true
+    @include background-image(linear-gradient(top, rgba(245,245,245,1) 0%,rgba(255,255,255,1) 100%))
+    display: table
+    height: 100%
+    position: relative
+    width: 100%
+.wrapper
+    display: block
+    margin: 0 auto
+    width: 960px
+.home
+    height: 70%
+    .coming-soon
+        display: block
+        height: 100%
+        margin: 0 auto
+        min-height: 600px
+        position: relative
+        width: ( 400px + 120px )
+        .logo-identisa, .logo-pifarma
+            display: block
+            float: left
+            position: absolute
+            top: 50%
+        .logo-identisa
+            left: 0
+            margin: ( -138px / 2 ) auto 0
+        .logo-pifarma
+            margin: ( -320px / 2 ) auto 0
+            right: 0
+.privacy-policy
+    background: none repeat scroll 0 0 $privacy-policy-background
+    bottom: 0
+    clear: both
+    display: block
+    height: 30%
+    max-height: 165px
+    position: absolute
+    width: 100%
+    a
+        @include font-mask( normal, em( 18, 16 ), 1.5em, $vag, $text-gray-color )
+        background: url( "../img/btn_aviso.png" ) no-repeat scroll left center transparent
+        display: inline-block
+        left: 50%
+        margin: ( -27px / 2 ) auto 0 ( -165px / 2 )
+        padding: 0 0 0 15px
+        text-align: center
+        text-decoration: none
+        top: 50%
+        position: absolute
+        width: 165px
+.alert
+    background: none no-repeat scroll 0 0 RGBA( 102, 102, 102, 0.9 )
+    box-sizing: border-box
+    display: block
+    height: 600px
+    margin: ( -600px / 2 ) 0 0 ( -600px / 2 )
+    left: 50%
+    padding: 50px 30px 30px
+    position: absolute
+    transition: all 0.5s ease 0.5s
+    top: 50%
+    width: 600px
+    .mfp-close
+        @extend .btn_cerrar
+        color: transparent
+        font-size: 0
+        position: absolute
+        right: 10px
+        top: 10px
+        &:hover
+            @extend .btn_cerrar_over
+    p
+        @include font-mask( normal, em( 16, 16 ), 1.5em, $vag, $white-color )
+    &.visible
+        display: block
